@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+div.row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.card {
+    width: 400px;
+}
