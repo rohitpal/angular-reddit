@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-training": {
+    "angular-reddit": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-training",
+            "outputPath": "dist/angular-reddit",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-training:build"
+            "browserTarget": "angular-reddit:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-training:build:production"
+              "browserTarget": "angular-reddit:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-training:build"
+            "browserTarget": "angular-reddit:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-training:serve"
+            "devServerTarget": "angular-reddit:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-training:serve:production"
+              "devServerTarget": "angular-reddit:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-training"
+  "defaultProject": "angular-reddit"
 }
